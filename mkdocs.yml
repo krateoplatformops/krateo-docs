@@ -1,5 +1,5 @@
 # Project information
-site_name: Krateo
+site_name: Krateo PlatformOps
 site_url: https://krateoplatformops.github.io/krateo-docs
 site_author: Krateo PlatformOps
 
@@ -11,8 +11,12 @@ docs_dir: docs
 
 # Navigation
 nav:
-  - Welcome:
-    - Overview: README.md   
+  - Overview: README.md
+  - Requirements: requirements.md
+  - Krateo CLI:
+    - The Krateo CLI tool: cli/cli-overview.md
+    - Installing the Krateo CLI: cli/cli-install.md
+    - Using Krateo CLI: cli/cli-using.md
   
 ## DO NOT CHANGE BELOW THIS LINE
 
@@ -31,6 +35,7 @@ theme:
     # - navigation.tabs
     - navigation.instant
     - navigation.expand
+    - navigation.indexes
   palette:
     scheme: default
     primary: blue
@@ -75,7 +80,8 @@ markdown_extensions:
         - name: mermaid
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_code_format
-  - pymdownx.tabbed
+  - pymdownx.tabbed:
+      alternate_style: true 
   - pymdownx.tasklist:
       custom_checkbox: true
   - pymdownx.tilde
