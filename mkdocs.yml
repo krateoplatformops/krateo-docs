@@ -17,6 +17,7 @@ nav:
     - The Krateo CLI tool: cli/cli-overview.md
     - Installing the Krateo CLI: cli/cli-install.md
     - Using Krateo CLI: cli/cli-using.md
+    - Krateo CLI 'init' command workflow: cli/cli-init-workflow.md
   
 ## DO NOT CHANGE BELOW THIS LINE
 
