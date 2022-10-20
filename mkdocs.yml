@@ -12,6 +12,7 @@ docs_dir: docs
 # Navigation
 nav:
   - Overview: README.md
+  - Glossary: glossary.md
   - Requirements: requirements.md
   - Krateo CLI:
     - The Krateo CLI tool: cli/cli-overview.md
