@@ -14,6 +14,7 @@ nav:
   - Overview: README.md
   - Glossary: glossary.md
   - Requirements: requirements.md
+  - How to install Krateo PlatformOps: how-to-install.md
   - Krateo CLI:
     - The Krateo CLI tool: cli/cli-overview.md
     - Installing the Krateo CLI: cli/cli-install.md
