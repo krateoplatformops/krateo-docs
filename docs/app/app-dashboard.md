@@ -11,7 +11,7 @@ In the dashboard page, you have a summary of your apps and their status.
 - users: (not yet implemented) is the total number of users.
 - [endpoints](./app-endpoints.md): is the total number of endpoints.
 
-# Action needed
+## Action needed
 
 There are three steps to complete the tutorial:
 

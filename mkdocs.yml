@@ -5,7 +5,7 @@ site_author: Krateo PlatformOps
 
 # Repository
 repo_name: krateo
-repo_url: https://github.com/krateoplatformops/krateo-docs
+repo_url: https://github.com/krateoplatformops/krateo
 edit_uri: edit/master/docs
 docs_dir: docs
 
@@ -40,7 +40,8 @@ theme:
     text: IBM Plex Sans
     code: IBM Plex Mono
   icon:
-    logo: material/library
+    logo: media/logo.png
+  favicon: media/logo.png
   features:
     # - navigation.tabs
     - navigation.instant
