@@ -39,9 +39,8 @@ theme:
   font:
     text: IBM Plex Sans
     code: IBM Plex Mono
-  icon:
-    logo: assets/logo
-  favicon: images/favicon.png
+  logo: assets/logo.svg
+  favicon: assets/favicon.png
   features:
     # - navigation.tabs
     - navigation.instant
