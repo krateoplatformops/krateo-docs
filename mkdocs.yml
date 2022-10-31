@@ -5,7 +5,7 @@ site_author: Krateo PlatformOps
 
 # Repository
 repo_name: krateo
-repo_url: https://github.com/krateoplatformops/krateo
+repo_url: https://github.com/krateoplatformops/krateo-docs
 edit_uri: edit/master/docs
 docs_dir: docs
 
