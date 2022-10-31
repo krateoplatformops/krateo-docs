@@ -16,11 +16,18 @@ nav:
   - Requirements: requirements.md
   - How to install Krateo PlatformOps: how-to-install.md
   - Krateo CLI:
-    - The Krateo CLI tool: cli/cli-overview.md
-    - Installing the Krateo CLI: cli/cli-install.md
-    - Using Krateo CLI: cli/cli-using.md
-    - Krateo CLI 'init' command workflow: cli/cli-init-workflow.md
-  
+      - The Krateo CLI tool: cli/cli-overview.md
+      - Installing the Krateo CLI: cli/cli-install.md
+      - Using Krateo CLI: cli/cli-using.md
+      - Krateo CLI 'init' command workflow: cli/cli-init-workflow.md
+  - App:
+      - Overview: app/app-overview.md
+      - Dashboard: app/app-dashboard.md
+      - Deployments: app/app-deployments.md
+      - Templates: app/app-templates.md
+      - Packages: app/app-packages.md
+      - Register: app/app-register.md
+      - Settings: app/app-settings.md
 ## DO NOT CHANGE BELOW THIS LINE
 
 # Copyright
@@ -84,7 +91,7 @@ markdown_extensions:
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.tabbed:
-      alternate_style: true 
+      alternate_style: true
   - pymdownx.tasklist:
       custom_checkbox: true
   - pymdownx.tilde
