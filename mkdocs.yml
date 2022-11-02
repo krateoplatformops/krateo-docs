@@ -28,6 +28,10 @@ nav:
       - Packages: app/app-packages.md
       - Register: app/app-register.md
       - Settings: app/app-settings.md
+  - Tutorial:
+      - Add Endpoint: tutorial/add-endpoint.md
+      - Import Template: tutorial/import-template.md
+      - Publish first deployment: tutorial/publish-first-deployment.md
 ## DO NOT CHANGE BELOW THIS LINE
 
 # Copyright
