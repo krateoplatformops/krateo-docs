@@ -4,9 +4,9 @@ site_url: https://docs.krateo.io
 site_author: Krateo PlatformOps
 
 # Repository
-repo_name: krateo
-repo_url: https://github.com/krateoplatformops/krateo-docs
-edit_uri: edit/main/docs
+repo_name: Krateo
+repo_url: https://github.com/krateoplatformops/krateo
+edit_uri: https://github.com/krateoplatformops/krateo-docs/edit/main/docs
 docs_dir: docs
 
 # Navigation
