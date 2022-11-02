@@ -53,6 +53,12 @@ Until the deployment is not completed, you can't use the `Deploy` button.
 - `title`: title of the step
 - `description`: description of the step
 - `properties`: array of fields
+- `box`: display an info box on the right of the form
+- `boxStyle`: default style is 'default', available styles are
+  - info (blue)
+  - warning (orange)
+  - success (green)
+  - error (red)
 
 ##### Property
 
@@ -140,8 +146,47 @@ spec:
           type: endpoint
 ```
 
-The above file is hose in the [krateo-template-fireworksapp](https://github.com/krateoplatformops/krateo-template-fireworksapp/).
+The above file is hosted in the [krateo-template-fireworksapp](https://github.com/krateoplatformops/krateo-template-fireworksapp/) GitHub repository.
 
 ```
 https://github.com/krateoplatformops/krateo-template-fireworksapp/blob/main/template.yaml
 ```
+
+## Template repository
+
+The template repository is a git repository that contains the template.yaml file and the others file that must be cloned in the target repository.
+
+### Structure
+
+- `template.yaml` (file): [template](#templateyaml) file
+- `deployment.yaml` (file): deployment file
+- `.krateoignore` (file): list of file/folders to ignore placeholder substitution in the target repository
+- `skeleton` (folder): this folder will be cloned in the target repository
+- `package.yaml` (file): composition package file
+- `crossplane.yaml` (file): crossplane file
+
+#### .krateoignore
+
+The `.krateoignore` file is a list of file/folders to ignore placeholder substitution in the target repository.
+It works like the `.gitignore` file.
+
+#### Skeleton folder
+
+This folder contains the files that will be cloned in the target repository.
+in every file you can use the placeholder that will be replaced with the values of the form.
+
+Let's show this example:
+
+```yaml
+# {{=<% %>=}}
+---
+namespace: <% repositoryName %>-ns
+image: ghcr.io/<% organizationName %>/<% repositoryName %>:latest
+replicas: <% replicas %>
+name: <% repositoryName %>
+host: <% host %>
+```
+
+This example is a `values.yaml` file of a helm chart.
+
+In Krateo, we use [mustache](https://mustache.github.io/) syntax to define the placeholder, in the first line we define the syntax, in this case we use `<% %>` instead of `{{ }}`.
