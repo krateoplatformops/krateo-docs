@@ -56,7 +56,6 @@ theme:
 # Plugins
 plugins:
   - search
-  - social
 
 # Customization
 extra:
