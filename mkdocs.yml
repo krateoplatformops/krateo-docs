@@ -4,7 +4,7 @@ site_url: https://docs.krateo.io
 site_author: Krateo PlatformOps
 
 # Repository
-repo_name: Krateo
+repo_name: krateoplatformops/krateo
 repo_url: https://github.com/krateoplatformops/krateo
 edit_uri: https://github.com/krateoplatformops/krateo-docs/edit/main/docs
 docs_dir: docs
@@ -50,6 +50,8 @@ theme:
     scheme: default
     primary: blue
     accent: blue
+  icon:
+    repo: fontawesome/brands/github
 
 # Plugins
 plugins:
