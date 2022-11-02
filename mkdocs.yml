@@ -8,7 +8,6 @@ repo_name: krateo
 repo_url: https://github.com/krateoplatformops/krateo-docs
 edit_uri: edit/main/docs
 docs_dir: docs
-site_dir: docs
 
 # Navigation
 nav:
