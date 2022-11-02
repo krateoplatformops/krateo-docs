@@ -4,7 +4,7 @@ App is the frontend of the application. It is a single page application that use
 
 ## Structure
 
-![overview](../media/app/overview.png).
+![overview](../media/app/overview.png)
 
 1. Hamburger menu: you can collapse or expand the menu.
 2. Logo: if you go hover with the mouse, you can see the version of the application.

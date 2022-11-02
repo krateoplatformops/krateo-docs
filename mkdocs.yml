@@ -56,6 +56,7 @@ theme:
 # Plugins
 plugins:
   - search
+  - social
 
 # Customization
 extra:
@@ -70,6 +71,7 @@ extra:
       link: https://discord.gg/RzuJWjTg
     - icon: fontawesome/solid/globe
       link: https://krateo.io
+
 # Extensions
 markdown_extensions:
   - abbr
