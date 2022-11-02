@@ -58,8 +58,18 @@ plugins:
   - search
 
 # Customization
-# TBD
-
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/krateoplatformops/
+    - icon: fontawesome/brands/youtube
+      link: https://www.youtube.com/channel/UCJ5JX8xOVzLqzhlCnNuehdQ
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/krateoplatform
+    - icon: fontawesome/brands/discord
+      link: https://discord.gg/RzuJWjTg
+    - icon: fontawesome/solid/globe
+      link: https://krateo.io
 # Extensions
 markdown_extensions:
   - abbr
