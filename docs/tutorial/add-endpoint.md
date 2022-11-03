@@ -8,7 +8,11 @@
 4. Here you can give the token a name and select the scopes you want to give it
    ![github-token](../media/tutorial/github-token.png)
    Customize the expiration date to your needs.
+
    Grant repo permissions to the token.
+
+   Add also the `delete_repo` permission and `write:packages` permission
+
 5. Copy the token and save it somewhere safe
 
 ## Add the token to Krateo
