@@ -1,5 +1,7 @@
 # Publish first Deployment
 
+## Publish Fireworks App
+
 1. Login to Krateo
 2. Click on the left menu to `Templates`
 3. If you have completed the previous steps you should see the template `Krateo Fireworks`
