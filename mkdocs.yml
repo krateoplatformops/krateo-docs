@@ -28,6 +28,8 @@ nav:
       - Packages: app/app-packages.md
       - Register: app/app-register.md
       - Settings: app/app-settings.md
+  - Services:
+      - Git Service: services/git-service.md
   - Tutorial:
       - Add Endpoint: tutorial/add-endpoint.md
       - Import Template: tutorial/import-template.md
