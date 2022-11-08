@@ -28,6 +28,8 @@ nav:
       - Packages: app/app-packages.md
       - Register: app/app-register.md
       - Settings: app/app-settings.md
+  - Providers:
+      - Git Provider: providers/provider-git.md
   - Services:
       - Git Service: services/git-service.md
   - Tutorial:
