@@ -32,10 +32,11 @@ nav:
       - Git Provider: providers/provider-git.md
   - Services:
       - Git Service: services/git-service.md
-  - Tutorial:
-      - Add Endpoint: tutorial/add-endpoint.md
-      - Import Template: tutorial/import-template.md
-      - Publish first deployment: tutorial/publish-first-deployment.md
+  - Tutorials:
+      - Add Endpoint: tutorials/add-endpoint.md
+      - Import Template: tutorials/import-template.md
+      - Publish first deployment: tutorials/publish-first-deployment.md
+      - Create AWS Stack: tutorials/create-aws-stack.md
 ## DO NOT CHANGE BELOW THIS LINE
 
 # Copyright
