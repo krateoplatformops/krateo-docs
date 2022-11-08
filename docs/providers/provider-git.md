@@ -22,7 +22,7 @@ $ helm install crossplane --namespace crossplane-system crossplane-stable/crossp
 
 Before installing the below manifest:
 
-- [replace `VERSION` with latest or your preferred provider version](./examples/provider.yaml)
+- [replace `VERSION` with latest or your preferred provider version](https://github.com/krateoplatformops/provider-git/tree/main/examples/provider.yaml)
 
 ```sh
 $ kubectl apply -f ./examples/provider.yaml
@@ -32,5 +32,5 @@ $ kubectl apply -f ./examples/provider.yaml
 
 You can found example manifest files here:
 
-- provider config [config.yaml](./examples/config.yaml)
-- crd instance [example.yaml](./examples/example.yaml)
+- provider config [config.yaml](https://github.com/krateoplatformops/provider-git/tree/main/examples/config.yaml)
+- crd instance [example.yaml](https://github.com/krateoplatformops/provider-git/tree/main/examples/example.yaml)
