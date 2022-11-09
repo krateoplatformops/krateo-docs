@@ -1,12 +1,12 @@
-# Publish first Deployment
+# Create Fireworks App
 
-## Publish Fireworks App
+## Create Deployment
 
 1. Login to Krateo
 2. Click on the left menu to `Templates`
 3. If you have completed the previous steps you should see the template `Krateo Fireworks`
 4. Click on the template card, and you will be redirect to the template form page
-5. This template has only 4 steps, but 3 of these are already fulfilled, but you can custmizare them if you want
+5. This template has only 4 steps, but 3 of these are already fulfilled, but you can customize them if you want
 
    1. Step 1: the name of the deployment
    2. Step 2: how many replicas you want to set
@@ -21,7 +21,7 @@
 
 ## Deployment Page
 
-This deployment has 8 tabs
+This deployment has 8 tabs:
 
 ### Overview
 
