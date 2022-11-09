@@ -33,6 +33,19 @@ nav:
   - Services:
       - Git Service: services/git-service.md
       - ArgoCD Service: services/argocd-service.md
+      - Event Service: services/event-service.md
+      - Notification Service: services/notification-service.md
+      - Auth Service: services/auth-service.md
+      - Secret Service: services/secret-service.md
+      - Kubernetes Service: services/kubernetes-service.md
+      - Provider Service: services/provider-service.md
+      - Deployment Service: services/deployment-service.md
+      - Template Service: services/template-service.md
+      - Component Service: services/component-service.md
+      - Pipeline Service: services/pipeline-service.md
+      - Capi Service: services/capi-service.md
+      - Code Quality Service: services/codequality-service.md
+      - Keptn Service: services/keptn-service.md
   - Tools:
       - Event Router: tools/eventrouter.md
   - Tutorials:
