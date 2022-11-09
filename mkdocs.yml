@@ -70,7 +70,7 @@ theme:
   features:
     # - navigation.tabs
     - navigation.instant
-    - navigation.expand
+    # - navigation.expand
     - navigation.indexes
   palette:
     scheme: default
