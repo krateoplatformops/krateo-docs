@@ -37,6 +37,7 @@ nav:
       - Import Template: tutorials/import-template.md
       - Publish first deployment: tutorials/publish-first-deployment.md
       - Create AWS Stack: tutorials/create-aws-stack.md
+      - Create your first deployment: tutorials/create-template.md
 ## DO NOT CHANGE BELOW THIS LINE
 
 # Copyright
