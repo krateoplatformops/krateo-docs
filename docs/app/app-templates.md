@@ -53,12 +53,6 @@ Until the deployment is not completed, you can't use the `Deploy` button.
 - `title`: title of the step
 - `description`: description of the step
 - `properties`: array of fields
-- `box`: display an info box on the right of the form
-- `boxStyle`: default style is 'default', available styles are
-  - info (blue)
-  - warning (orange)
-  - success (green)
-  - error (red)
 
 ##### Property
 
@@ -69,6 +63,12 @@ Until the deployment is not completed, you can't use the `Deploy` button.
 - `default`: default value of the field
 - `type`: type of the field (default is text)
 - `options`: array of options (only for select/radio type)
+- `box`: display an info box on the right of the form
+- `style`: default style is 'default', available styles are
+  - info (blue)
+  - warning (orange)
+  - success (green)
+  - error (red)
 
 ###### Types
 
@@ -80,6 +80,7 @@ Until the deployment is not completed, you can't use the `Deploy` button.
 - `radio`: radio field
 - `select`: select field
 - `multiple`: multiple field
+- `box`: info box
 
 ###### Options
 

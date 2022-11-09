@@ -103,13 +103,25 @@ widgets:
   - title: Step 1
     description: Step 1
     properties:
-      - value: Info box
-        type: box
-        style: success
-        key: info
       - title: Name
         key: name
         description: Unique name of the component
         required: true
         default: my-awesome-component
+      - value: Info box
+        type: box
+        style: success
 ```
+
+After this, you can re-import the template and you will see this:
+
+![template](../media/tutorial/template-step-2.png)
+
+## Field types
+
+As described [here](../app/app-templates#types) there are multiple type of fields.
+
+## Need more help?
+
+You can find some examples on our GitHub organization
+[github.com/krateoplatformops](https://github.com/krateoplatformops?q=krateo-template&type=all&language=&sort=).

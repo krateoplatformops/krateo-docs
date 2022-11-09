@@ -47,6 +47,24 @@ https://github.com/krateoplatformops/krateo-template-awsstack/blob/main/template
 3. Add the url of the template in the form (here you must have already created the GitHub endpoint, if not, follow this [tutorial](./add-endpoint.md))
 4. Click on `register` button
 
+## Install the Required Provider
+
+To deploy the stack you need to install some provider. You can do this by doing this:
+
+1. Login to Krateo
+2. Go to `packages` page
+3. Click on the `plus` button on the top right
+
+   ![aws-add-provider](../media/tutorial/aws-add-providers.png)
+
+4. The required providers are:
+
+   - `provider-aws`
+   - `provider-git`
+   - `provider-github`
+
+5. Simply click on the `bottom right` button for each provider to install them
+
 ## Create the stack (use the template)
 
 The AWS Stack template has 4 steps
