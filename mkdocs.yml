@@ -32,6 +32,8 @@ nav:
       - Git Provider: providers/provider-git.md
   - Services:
       - Git Service: services/git-service.md
+  - Tools:
+      - Eventrouter: tools/eventrouter.md
   - Tutorials:
       - Add Endpoint: tutorials/add-endpoint.md
       - Import Template: tutorials/import-template.md
