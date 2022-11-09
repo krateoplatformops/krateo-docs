@@ -119,7 +119,7 @@ After this, you can re-import the template and you will see this:
 
 ## Field types
 
-As described [here](app/app-templates#types) there are multiple type of fields.
+As described [here](../../app/app-templates#types) there are multiple type of fields.
 
 ## Need more help?
 
