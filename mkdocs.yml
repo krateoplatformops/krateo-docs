@@ -30,6 +30,7 @@ nav:
       - Settings: app/app-settings.md
   - Providers:
       - Git Provider: providers/provider-git.md
+      - GitHub Provider: providers/provider-github.md
   - Services:
       - Git Service: services/git-service.md
       - ArgoCD Service: services/argocd-service.md
