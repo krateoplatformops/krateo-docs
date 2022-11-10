@@ -51,3 +51,9 @@ Here we are looking for all resource with the label `deploymentId=b367d339-d848-
   "count": 4
 }
 ```
+
+!!! Note
+
+    Services respond with valid JSON, so, if the response is an array, it will be wrapped in the `list` property.
+
+    If the response contains the `list` proerty it will add the property `count` with the number of items in the list.
