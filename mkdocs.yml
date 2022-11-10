@@ -30,6 +30,7 @@ nav:
       - Settings: app/app-settings.md
   - Providers:
       - ArgoCD Endpoint: providers/provider-argocd-endpoint.md
+      - Bitbucket: providers/provider-bitbucket.md
       - Git: providers/provider-git.md
       - GitHub: providers/provider-github.md
   - Services:
