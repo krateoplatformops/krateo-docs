@@ -29,9 +29,9 @@ nav:
       - Register: app/app-register.md
       - Settings: app/app-settings.md
   - Providers:
-      - ArgoCD Endpoint Provider: providers/provider-argocd-endpoint.md
-      - Git Provider: providers/provider-git.md
-      - GitHub Provider: providers/provider-github.md
+      - ArgoCD Endpoint: providers/provider-argocd-endpoint.md
+      - Git: providers/provider-git.md
+      - GitHub: providers/provider-github.md
   - Services:
       - Git Service: services/git-service.md
       - ArgoCD Service: services/argocd-service.md
