@@ -51,6 +51,7 @@ nav:
       - Keptn Service: services/keptn-service.md
   - Tools:
       - Event Router: tools/eventrouter.md
+      - Event Router Kafka Producer: tools/eventrouter-kafka-producer.md
   - Tutorials:
       - Add Endpoint: tutorials/add-endpoint.md
       - Import Template: tutorials/import-template.md
