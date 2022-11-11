@@ -18,6 +18,8 @@ This route returns the kubeconfig for the given deployment.
 
 This route returns the cluster object for the given deployment.
 
+#### Example
+
 ```bash
 /b367d339-d848-446f-aee4-963a6e3cc0c1/kubeconfig
 ```
