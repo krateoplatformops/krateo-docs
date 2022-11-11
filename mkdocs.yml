@@ -22,6 +22,7 @@ nav:
       - Krateo CLI 'init' command workflow: cli/cli-init-workflow.md
   - App:
       - Overview: app/app-overview.md
+      - Login: app/login.md
       - Dashboard: app/app-dashboard.md
       - Deployments: app/app-deployments.md
       - Templates: app/app-templates.md
@@ -34,21 +35,21 @@ nav:
       - Git: providers/provider-git.md
       - GitHub: providers/provider-github.md
   - Services:
-      - Git Service: services/git-service.md
       - ArgoCD Service: services/argocd-service.md
-      - Event Service: services/event-service.md
-      - Notification Service: services/notification-service.md
       - Auth Service: services/auth-service.md
-      - Secret Service: services/secret-service.md
-      - Kubernetes Service: services/kubernetes-service.md
-      - Provider Service: services/provider-service.md
-      - Deployment Service: services/deployment-service.md
-      - Template Service: services/template-service.md
-      - Component Service: services/component-service.md
-      - Pipeline Service: services/pipeline-service.md
       - Capi Service: services/capi-service.md
       - Code Quality Service: services/codequality-service.md
+      - Component Service: services/component-service.md
+      - Deployment Service: services/deployment-service.md
+      - Event Service: services/event-service.md
+      - Git Service: services/git-service.md
       - Keptn Service: services/keptn-service.md
+      - Kubernetes Service: services/kubernetes-service.md
+      - Notification Service: services/notification-service.md
+      - Pipeline Service: services/pipeline-service.md
+      - Provider Service: services/provider-service.md
+      - Secret Service: services/secret-service.md
+      - Template Service: services/template-service.md
   - Tools:
       - Event Router: tools/eventrouter.md
       - Event Router Kafka Producer: tools/eventrouter-kafka-producer.md
