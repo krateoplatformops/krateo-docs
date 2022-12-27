@@ -38,10 +38,10 @@ Krateo will follow the Bounded Context approach, starting with three definitions
 
 ### Krateo Module
 
-A self-consistent set of tools that allow Krateo to deliver new functionalities.
+A self-consistent set of components that allows Krateo to deliver new functionalities. *Functionality* means a feature with a specific goal for the final user like the Krateo UI (composition of frontend/backend) or a classic backend service (e.g. to collect metrics or events).
+
+This set of components is made up of packaged streams of YAML manifests that represents the resources that will be applied.
 A module doesn't require inputs from the UI via form (aka [Krateo Template](#krateo-template)).
-
-
 
 #### Krateo Module deep dive into technical definition
 
@@ -59,10 +59,17 @@ More details in a related issue.
 
 ### Krateo Template
 
-A form that guides to user via Krateo UI to build specifications for a Krateo Deployment.
+A form that guides users via Krateo UI to build specifications for a [Krateo Deployment](#krateo-deployment).
+Krateo Template resources have the same user experience and is represented by a YAML manifest that describes which widgets and graphical element should be rendered.
+
+Krateo Template lets Platform Engineers to choose the best way to ask for user inputs, like providing widgets, default values, a well-defined list of choices, regex to validate user input etc.
 
 #### Krateo Template deep dive into technical definition
 
-An example of a Krateo Template can be *krateo-template-fireworksapp*.
+An example of a Krateo Template can be [*krateo-template-fireworksapp*](https://github.com/krateoplatformops/krateo-template-fireworksapp/blob/main/template.yaml), which aims to ask to the user the name of the application to release, the number of pods, the host to use to expose the application and the organization name for the git repository creation.
+
+A Krateo Template doesn't have fixed specifications but it is represented by an array. Each element of the array is a *Widget*.
+
+More details in a related issue.
 
 ### Krateo Deployment
