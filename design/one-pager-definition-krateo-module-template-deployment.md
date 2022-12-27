@@ -73,3 +73,16 @@ A Krateo Template doesn't have fixed specifications but it is represented by an 
 More details in a related issue.
 
 ### Krateo Deployment
+
+A higher level *Composite Resource* that represents a group of *Managed Resources*.
+
+Managed resources are granular, high fidelity Kubernetes representations of a resource in an external system.
+
+Managed resources are what Krateo enables platform teams to compose into higher level composite resources, forming an opinionated platform API. They’re the building blocks of a Krateo Deployment.
+
+Within a Krateo Deployment it is possible to specify which plugins are available in the Krateo UI Deployment section for a specific deployment instance.
+
+#### Krateo Deployment deep dive into technical definition
+
+An example of a Krateo Deployment can be [*kind: FireworksApp, apiVersion: deployment.krateo.io/v1alpha1*](https://github.com/krateoplatformops/krateo-template-fireworksapp/blob/main/deployment.yaml) where the managed resources are git repository, ArgoCD Application,
+]
