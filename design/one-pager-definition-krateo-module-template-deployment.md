@@ -84,5 +84,4 @@ Within a Krateo Deployment it is possible to specify which plugins are available
 
 #### Krateo Deployment deep dive into technical definition
 
-An example of a Krateo Deployment can be [*kind: FireworksApp, apiVersion: deployment.krateo.io/v1alpha1*](https://github.com/krateoplatformops/krateo-template-fireworksapp/blob/main/deployment.yaml) where the managed resources are git repository, ArgoCD Application,
-]
+An example of a Krateo Deployment can be [*kind: FireworksApp, apiVersion: deployment.krateo.io/v1alpha1*](https://github.com/krateoplatformops/krateo-template-fireworksapp/blob/main/deployment.yaml) where the managed resources are git repository, GitHub repository and an ArgoCD Application.
