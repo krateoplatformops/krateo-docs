@@ -38,22 +38,31 @@ Krateo will follow the Bounded Context approach, starting with three definitions
 
 ### Krateo Module
 
-A self-consistent group of tools that need to be installed in Krateo.
+A self-consistent set of tools that allow Krateo to deliver new functionalities.
+A module doesn't require inputs from the UI via form (aka [Krateo Template](#krateo-template)).
+
+
 
 #### Krateo Module deep dive into technical definition
 
-An example of a Krateo Module can be *krateo-module-ui*, which will contain the frontend, different microservice backends and other components like the (Eventrouter)[https://github.com/krateoplatformops/eventrouter]. Another example can be *krateo-module-argocd*, which will contain ArgoCD helm chart or operator for Openshift, *argocd-api* (to return plain data) and *argocd-app* (to convert plain data for the frontend).
+An example of a Krateo Module can be *krateo-module-ui*, which will contain the frontend, different microservice backends and other components like the [Eventrouter](https://github.com/krateoplatformops/eventrouter). Another example can be *krateo-module-argocd*, which will contain ArgoCD helm chart or operator for Openshift, *argocd-api* (to return plain data) and *argocd-app* (to convert plain data for the frontend).
 
 *An helm chart should install only one tool as it represents the packaging for microservice manifests.* This means that an Helm chart is not a feasible way to package a Krateo Module.
 
 A Krateo Module is represented by a [Crossplane claim](https://docs.crossplane.io/v1.10/concepts/composition/#claiming-composite-resources) and is packaged via OCI image.
 
-When a Krateo Module manifest is applied to the Kubernetes cluster, the related (Configuration Package)[https://docs.crossplane.io/v1.10/concepts/packages/#configuration-packages] is applied and then a claim is generated from the Krateo Module specs and applied.
+When a Krateo Module manifest is applied to the Kubernetes cluster, the related [Configuration Package](https://docs.crossplane.io/v1.10/concepts/packages/#configuration-packages) is applied and then a claim is generated from the Krateo Module specs and applied.
 
 *It is not possible to use a pre-defined claim because it cannot be packaged via OCI image. This means that every spec for the claim must be specified in the Module specs.*
 
 More details in a related issue.
 
 ### Krateo Template
+
+A form that guides to user via Krateo UI to build specifications for a Krateo Deployment.
+
+#### Krateo Template deep dive into technical definition
+
+An example of a Krateo Template can be *krateo-template-fireworksapp*.
 
 ### Krateo Deployment
