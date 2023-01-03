@@ -41,28 +41,26 @@ Krateo will follow the Bounded Context approach, starting with three definitions
 A self-consistent set of components that allows Krateo to deliver new functionalities. *Functionality* means a feature with a specific goal for the final user like the Krateo UI (composition of frontend/backend) or a classic backend service (e.g. to collect metrics or events).
 
 This set of components is made up of packaged streams of YAML manifests that represents the resources that will be applied.
-A module doesn't require inputs from the UI via form (aka [Krateo Template](#krateo-template)).
+A module could require inputs from the UI via form (aka [Krateo Template](#krateo-template)). It is a decision of the Platform Team to offer this interaction.
 
 #### Krateo Module deep dive into technical definition
 
-An example of a Krateo Module can be *krateo-module-ui*, which will contain the frontend, different microservice backends and other components like the [Eventrouter](https://github.com/krateoplatformops/eventrouter). Another example can be *krateo-module-argocd*, which will contain ArgoCD helm chart or operator for Openshift, *argocd-api* (to return plain data) and *argocd-app* (to convert plain data for the frontend).
+An example of a Krateo Module can be *krateo-module-ui*, which will contain the frontend, different microservice backends and other components like the [Eventrouter](https://github.com/krateoplatformops/eventrouter). Another example can be *krateo-module-argocd*, which will contain ArgoCD helm chart or operator for Openshift, *argocd-api* (to return plain data) and *argocd-app* (to convert plain data for the frontend). Another example can be an infrastructure on AWS made by a Kubernetes EKS cluster, VPC network and a RDS instance all connected together.
 
-*An helm chart should install only one tool as it represents the packaging for microservice manifests.* This means that an Helm chart is not a feasible way to package a Krateo Module.
+A Krateo Module is represented by a [Crossplane claim](https://docs.crossplane.io/v1.10/concepts/composition/#claiming-composite-resources) and is packaged via OCI image. This guarantees also the continuous reconciliation due to the usage of Kubernetes operators.
 
-A Krateo Module is represented by a [Crossplane claim](https://docs.crossplane.io/v1.10/concepts/composition/#claiming-composite-resources) and is packaged via OCI image.
-
-When a Krateo Module manifest is applied to the Kubernetes cluster, the related [Configuration Package](https://docs.crossplane.io/v1.10/concepts/packages/#configuration-packages) is applied and then a claim is generated from the Krateo Module specs and applied.
-
-*It is not possible to use a pre-defined claim because it cannot be packaged via OCI image. This means that every spec for the claim must be specified in the Module specs.*
+A Krateo Module manifest cannot be applied to the Kubernetes cluster if the related [Configuration Package](https://docs.crossplane.io/v1.10/concepts/packages/#configuration-packages) is not previously applied.
 
 More details in a related issue.
 
 ### Krateo Template
 
 A form that guides users via Krateo UI to build specifications for a [Krateo Deployment](#krateo-deployment).
-Krateo Template resources have the same user experience and is represented by a YAML manifest that describes which widgets and graphical element should be rendered.
+Different Krateo Templates must guarantee the same user experience and are represented by a YAML manifest that describes which widgets and graphical element should be rendered.
 
 Krateo Template lets Platform Engineers to choose the best way to ask for user inputs, like providing widgets, default values, a well-defined list of choices, regex to validate user input etc.
+
+When the Krateo UI gathers inputs form the user, it generates the [Crossplane claim](https://docs.crossplane.io/v1.10/concepts/composition/#claiming-composite-resources) for that [Krateo Module](#krateo-module), generating a [Krateo Deployment](#krateo-deployment).
 
 #### Krateo Template deep dive into technical definition
 
@@ -81,6 +79,8 @@ Managed resources are granular, high fidelity Kubernetes representations of a re
 Managed resources are what Krateo enables platform teams to compose into higher level composite resources, forming an opinionated platform API. They’re the building blocks of a Krateo Deployment.
 
 Within a Krateo Deployment it is possible to specify which plugins are available in the Krateo UI Deployment section for a specific deployment instance.
+
+A Krateo Deployment is an instance of a [Krateo Module](#krateo-module).
 
 #### Krateo Deployment deep dive into technical definition
 
