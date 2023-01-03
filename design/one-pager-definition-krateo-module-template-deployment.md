@@ -72,7 +72,7 @@ More details in a related issue.
 
 ### Krateo Deployment
 
-A higher level *Composite Resource* that represents a group of *Managed Resources*.
+A higher level *Composite Resource* that represents an instance of a group of *Managed Resources*.
 
 Managed resources are granular, high fidelity Kubernetes representations of a resource in an external system.
 
