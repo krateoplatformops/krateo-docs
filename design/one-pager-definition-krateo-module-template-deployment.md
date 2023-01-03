@@ -47,9 +47,9 @@ A module could require inputs from the UI via form (aka [Krateo Template](#krate
 
 An example of a Krateo Module can be *krateo-module-ui*, which will contain the frontend, different microservice backends and other components like the [Eventrouter](https://github.com/krateoplatformops/eventrouter). Another example can be *krateo-module-argocd*, which will contain ArgoCD helm chart or operator for Openshift, *argocd-api* (to return plain data) and *argocd-app* (to convert plain data for the frontend). Another example can be an infrastructure on AWS made by a Kubernetes EKS cluster, VPC network and a RDS instance all connected together.
 
-A Krateo Module is represented by a [Crossplane claim](https://docs.crossplane.io/v1.10/concepts/composition/#claiming-composite-resources) and is packaged via OCI image. This guarantees also the continuous reconciliation due to the usage of Kubernetes operators.
+A Krateo Module is pretty much aligned with a [Terraform module](https://developer.hashicorp.com/terraform/language/modules) concept.
 
-A Krateo Module manifest cannot be applied to the Kubernetes cluster if the related [Configuration Package](https://docs.crossplane.io/v1.10/concepts/packages/#configuration-packages) is not previously applied.
+A Krateo Module is a [Crossplane Composition](https://docs.crossplane.io/v1.10/concepts/composition/).
 
 More details in a related issue.
 
@@ -81,6 +81,10 @@ Managed resources are what Krateo enables platform teams to compose into higher 
 Within a Krateo Deployment it is possible to specify which plugins are available in the Krateo UI Deployment section for a specific deployment instance.
 
 A Krateo Deployment is an instance of a [Krateo Module](#krateo-module).
+
+A Krateo Deployment is represented by a [Crossplane claim](https://docs.crossplane.io/v1.10/concepts/composition/#claiming-composite-resources) and is packaged via OCI image. This guarantees also the continuous reconciliation due to the usage of Kubernetes operators.
+
+A Krateo Deployment manifest cannot be applied to the Kubernetes cluster if the related [Configuration Package](https://docs.crossplane.io/v1.10/concepts/packages/#configuration-packages) is not previously applied.
 
 #### Krateo Deployment deep dive into technical definition
 
