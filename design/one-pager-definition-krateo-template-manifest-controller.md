@@ -19,6 +19,7 @@ Scope of this definition is to put all the logic for handling a Krateo Template 
 3. A Krateo Template manifest cannot be applied if the related Krateo Module is not previously installed. The Krateo Template controller will understand which Krateo Module the Krateo Template is related thanks to a proper section within Krateo Template specs - ideally as a [dependency](https://doc.crds.dev/github.com/crossplane/crossplane/meta.pkg.crossplane.io/Configuration/v1@v1.10.1#spec-dependsOn).
 5. A Krateo Template manifest must provide the ability to specify regex for each input field.
 6. The deletion of a Krateo Template removes the related Krateo Module. If the Platform Teams wants to still let a user request a Krateo Deployment via Kubernetes manifest, then the Krateo Module can be installed with the related manifest.
+7. A Krateo Template can be used also to edit a Krateo Deployment. There is the option for the Platform Team to let the user edit just some fields, so the Krateo Template manifest will provide the option to specify if a field is editable or not.
 
 ## Krateo Template manifest
 
