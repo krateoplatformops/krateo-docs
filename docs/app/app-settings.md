@@ -5,11 +5,11 @@
 The settings page allows you to get information about your
 
 - [Settings](#settings)
-  - [Profile](#profile)
-  - [Endpoints](#endpoints)
-  - [Secrets](#secrets)
-  - [Components](#components)
-  - [Authentication](#authentication)
+  * [Profile](#profile)
+  * [Endpoints](#endpoints)
+  * [Secrets](#secrets)
+  * [Components](#components)
+  * [Authentication](#authentication)
 
 ## Profile
 
