@@ -12,6 +12,6 @@ To correctly install Krateo PlatformOps fulfill the following requirements:
     * Ability to reach https://github.com , https://charts.krateo.io , https://charts.konghq.com , xpkg.upbound.io , ghcr.io, docker.io
 
 - Wildcar domain
-    * Krateo will we exposed at the following url: app.\<wildcard-domain\>
+    * Krateo will add the 'app' and 'api' prefix to the wildcard domain
 
 If you meet this requirement, you can proceed with the [installation](./cli/cli-overview.md#installing-the-krateo-cli).
