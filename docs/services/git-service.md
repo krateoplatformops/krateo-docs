@@ -6,6 +6,8 @@ We can manage this types of git repository:
 
 - github (public and private)
 - bitbucket (on-premise)
+- gitlab (public)
+- azuredevops (public)
 
 Independently of the git service, this service needs an endpoint to get the files.
 
