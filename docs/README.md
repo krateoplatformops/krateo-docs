@@ -10,7 +10,7 @@ Krateo allows for:
 
 ## Our mission
 
-With Krateo, we aim to simplicy the existing toolchain with a simple-to-use, complete and modular platform that allows for creating resources on any infrastructure. We see Krateo as a powerful tool that improves the workflow of teams by defining clear roles in which the infrastructure team creates the resource templates needed by the developers, and the developers are the final users that use those templates and can manage the lifecycle of the created resources from a simple, unified dashboard.
+With Krateo, we aim to simplify the existing toolchain with a simple-to-use, complete and modular platform that allows for creating resources on any infrastructure. We see Krateo as a powerful tool that improves the workflow of teams by defining clear roles in which the infrastructure team creates the resource templates needed by the developers, and the developers are the final users that use those templates and can manage the lifecycle of the created resources from a simple, unified dashboard.
 
 In our vision, Krateo is:
 
